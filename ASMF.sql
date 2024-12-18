@@ -75,6 +75,7 @@ CREATE TABLE Sales (
     QuantitySold INT,
     SaleDate DATE,
     EmployeeID INT,
+	CustomerID INT,
     FOREIGN KEY (ProductID) REFERENCES Product(ProductID),
     FOREIGN KEY (EmployeeID) REFERENCES Employee(EmployeeID)
 );
